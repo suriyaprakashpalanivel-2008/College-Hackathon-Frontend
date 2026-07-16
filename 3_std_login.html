@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Access</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url("https://www.gcee.ac.in/assets/img/blog/img2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.92);
+            padding: 30px;
+            width: 90%;             
+            max-width: 450px;       
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px black;
+            text-align: center;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 10px;
+            width: 90%;
+            max-width: 250px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .track-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Student Request Page</h2>
+
+    <form action="student_dashboard.html">
+
+       
+        <input type="text" placeholder="Register Number" required><br>
+
+        
+        <input type="text" placeholder="Student Name" required><br>
+
+        
+        <label><b>Select Request Type</b></label><br><br>
+
+        <input type="radio" name="request" required> OD Request<br>
+        <input type="radio" name="request"> Leave Request<br>
+        <input type="radio" name="request"> Other Permission<br><br>
+
+        <button type="submit">Proceed</button>
+
+    </form>
+
+    <hr>
+
+    
+    <a href="track_request.html">
+        <button class="track-btn">Track My Request</button>
+    </a>
+
+</div>
+
+</body>
+</html>
